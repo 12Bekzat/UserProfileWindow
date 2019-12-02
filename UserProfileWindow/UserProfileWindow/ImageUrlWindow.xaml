@@ -1,0 +1,19 @@
+﻿<Window x:Class="UserProfileWindow.ImageUrlWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Profile"
+        mc:Ignorable="d"
+        Title="ImageUrl" Height="150" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Введите Url картинки ниже:" HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Bottom" Width="163" Grid.Row="0"/>
+        <TextBox x:Name="imageUrl" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Grid.Row="1"/>
+        <Button Width="100" Content="Загрузить" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 20 20" Click="LoadClick" Grid.Row="2" Background="Blue" Foreground="White"/>
+    </Grid>
+</Window>
